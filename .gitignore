@@ -16,11 +16,15 @@ ENV/
 .coverage
 htmlcov/
 
-# Raw Large Datasets (GitHub 100MB limit; downloaded via kagglehub / src.data.loader)
+# Large Datasets & Archives (GitHub 100MB limit; downloaded via scripts/loader)
 twcs/
-twcs.csv
-data/*_raw.csv
-data/*_conversations.jsonl
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.tar.gz
+data/*.csv
+data/*.jsonl
 data/retrieval_index/
 *.pkl
 
