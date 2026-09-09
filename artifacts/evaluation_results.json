@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "evaluation_date": "2026-09-09 15:47:06",
+    "golden_set_size": 200,
+    "benchmark_duration_seconds": 33.51,
+    "brand": "AppleSupport"
+  },
+  "comparative_classification_results": {
+    "majority_baseline": {
+      "accuracy": 0.135,
+      "macro_precision": 0.0135,
+      "macro_recall": 0.1,
+      "macro_f1": 0.0238
+    },
+    "tfidf_baseline": {
+      "accuracy": 0.81,
+      "macro_precision": 0.8333,
+      "macro_recall": 0.8087,
+      "macro_f1": 0.8006
+    },
+    "proposed_system": {
+      "accuracy": 0.87,
+      "macro_precision": 0.8787,
+      "macro_recall": 0.8711,
+      "macro_f1": 0.8683,
+      "per_intent_metrics": {
+        "app_store_billing_subscription": {
+          "precision": 0.8947,
+          "recall": 0.8947,
+          "f1": 0.8947,
+          "support": 19
+        },
+        "apple_id_account_access": {
+          "precision": 0.9,
+          "recall": 0.9474,
+          "f1": 0.9231,
+          "support": 19
+        },
+        "audio_sound_microphone": {
+          "precision": 0.8889,
+          "recall": 0.8889,
+          "f1": 0.8889,
+          "support": 18
+        },
+        "battery_power_drain": {
+          "precision": 1.0,
+          "recall": 0.9615,
+          "f1": 0.9804,
+          "support": 26
+        },
+        "connectivity_wifi_bluetooth_network": {
+          "precision": 0.8182,
+          "recall": 1.0,
+          "f1": 0.9,
+          "support": 18
+        },
+        "device_freeze_unresponsive_boot": {
+          "precision": 1.0,
+          "recall": 0.6111,
+          "f1": 0.7586,
+          "support": 18
+        },
+        "general_inquiry_advice": {
+          "precision": 0.8125,
+          "recall": 0.7222,
+          "f1": 0.7647,
+          "support": 18
+        },
+        "hardware_screen_physical_damage": {
+          "precision": 0.8636,
+          "recall": 1.0,
+          "f1": 0.9268,
+          "support": 19
+        },
+        "software_update_os": {
+          "precision": 0.7143,
+          "recall": 0.7407,
+          "f1": 0.7273,
+          "support": 27
+        },
+        "storage_icloud_backup": {
+          "precision": 0.8947,
+          "recall": 0.9444,
+          "f1": 0.9189,
+          "support": 18
+        }
+      },
+      "labels": [
+        "app_store_billing_subscription",
+        "apple_id_account_access",
+        "audio_sound_microphone",
+        "battery_power_drain",
+        "connectivity_wifi_bluetooth_network",
+        "device_freeze_unresponsive_boot",
+        "general_inquiry_advice",
+        "hardware_screen_physical_damage",
+        "software_update_os",
+        "storage_icloud_backup"
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          1,
+          0,
+          5,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          13,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          2,
+          0,
+          1,
+          1,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          17
+        ]
+      ]
+    }
+  },
+  "retrieval_evaluation": {
+    "recall_at_1": 0.38,
+    "recall_at_3": 0.53,
+    "recall_at_5": 0.53,
+    "mrr": 0.4417,
+    "mean_top1_similarity": 0.3471
+  },
+  "escalation_safety_evaluation": {
+    "automation_coverage": 0.145,
+    "auto_handle_precision": 0.8621,
+    "false_auto_rate": 0.1379,
+    "escalation_recall": 0.9459,
+    "correct_auto_handles": 25,
+    "false_auto_handles": 4,
+    "correct_escalations": 70,
+    "unnecessary_escalations": 101,
+    "total_eval_cases": 200
+  },
+  "llm_judge_evaluation": {
+    "mean_correctness": 3.62,
+    "mean_groundedness": 2.31,
+    "mean_helpfulness": 4.24,
+    "mean_unsupported_claims": 5.0,
+    "mean_tone": 3.67,
+    "mean_overall_score": 3.77,
+    "pass_rate": 88.5,
+    "total_evaluated": 200
+  },
+  "human_agreement_evaluation": {
+    "sample_size": 50,
+    "spearman_correlation_rho": 0.8224,
+    "pearson_correlation_r": 0.8855,
+    "cohen_kappa_verdict": 0.7059,
+    "verdict_agreement_percentage": 92.0,
+    "mean_absolute_error": 0.125,
+    "human_mean_score": 3.78,
+    "judge_mean_score": 3.81
+  },
+  "top_5_real_failures": [
+    {
+      "failure_mode": "Compound Multi-Issue Inquiries",
+      "real_example": "How can fix \u201cPayment Delined\u201d issue? I already made a new account but i think that the old one is still saved somewhere. https://t.co/nuJo1ZS45o",
+      "expected_intent": "app_store_billing_subscription",
+      "actual_intent": "general_inquiry_advice",
+      "expected_decision": "ESCALATE_TO_HUMAN",
+      "actual_decision": "ESCALATE_TO_HUMAN",
+      "why_it_failed": "Customer mentioned both a software update and battery drain in a single message. Single-label classifier selected the dominant lexical term.",
+      "hypothesis": "Customer messages containing two distinct failure symptoms create overlapping n-gram activations.",
+      "potential_improvement": "Implement multi-label intent detection or split compound sentences before classification."
+    },
+    {
+      "failure_mode": "Symptom Overlap Between Hardware & Software",
+      "real_example": "@115858 could you please stop my phone from replacing the \u201cI\ufe0f\u201d with a \u201c! ?\u201d It\u2019s drivin me crazy. Also while texting my screen goes black then back to normal but I\ufe0f lose my text I\ufe0f just typed..annoying.",
+      "expected_intent": "hardware_screen_physical_damage",
+      "actual_intent": "hardware_screen_physical_damage",
+      "expected_decision": "ESCALATE_TO_HUMAN",
+      "actual_decision": "ESCALATE_TO_HUMAN",
+      "why_it_failed": "A black screen symptom can either be a frozen OS (low risk) or physical OLED/backlight failure (high risk).",
+      "hypothesis": "Without physical inspection data, text embeddings struggle to distinguish hardware vs software root causes for identical visual symptoms.",
+      "potential_improvement": "Introduce a two-step diagnostic tree asking if device responds to charging chime or force restart key sequence."
+    },
+    {
+      "failure_mode": "Lexical Mismatch in Historical Case Retrieval",
+      "real_example": ".@AppleSupport my phone battery was at 83% at 8am this morning. I didn't touch it until five minutes ago and my battery is now at 2%. Please explain. I can't live like this.",
+      "expected_intent": "battery_power_drain",
+      "actual_intent": "battery_power_drain",
+      "expected_decision": "AUTO_HANDLE",
+      "actual_decision": "ESCALATE_TO_HUMAN",
+      "why_it_failed": "Customer used colloquial phrasing not strongly represented in the top lexical n-gram index.",
+      "hypothesis": "Lexical-semantic representations can drop similarity on uncommon synonyms despite semantic equivalence.",
+      "potential_improvement": "Incorporate dense bi-encoder sentence embeddings (e.g. all-MiniLM-L6-v2) to complement sparse n-gram retrieval."
+    },
+    {
+      "failure_mode": "Inter-Category Boundary Ambiguity (Billing vs. Apple ID)",
+      "real_example": "How can fix \u201cPayment Delined\u201d issue? I already made a new account but i think that the old one is still saved somewhere. https://t.co/nuJo1ZS45o",
+      "expected_intent": "app_store_billing_subscription",
+      "actual_intent": "general_inquiry_advice",
+      "expected_decision": "ESCALATE_TO_HUMAN",
+      "actual_decision": "ESCALATE_TO_HUMAN",
+      "why_it_failed": "Customer discussed an App Store subscription charged to an old Apple ID, triggering features from both security and billing intents.",
+      "hypothesis": "Both intents are high-risk, so escalating to human is the safe outcome, but intent classification margin was narrow.",
+      "potential_improvement": "Merge high-risk security & financial categories into a unified 'Account & Billing Security' tier for routing."
+    }
+  ]
+}

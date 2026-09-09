@@ -1,0 +1,31 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Testing & Caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw Large Datasets (GitHub 100MB limit; downloaded via kagglehub / src.data.loader)
+twcs/
+twcs.csv
+data/*_raw.csv
+data/*_conversations.jsonl
+data/retrieval_index/
+*.pkl
+
+# OS / Editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,160 @@
+# Apple Support Intent Taxonomy
+# Grounded in empirical analysis of 52,999 AppleSupport conversations from Twitter dataset.
+
+intents:
+  - name: "battery_power_drain"
+    display_name: "Battery & Power Management"
+    description: "Issues related to fast battery drainage, sudden shutdowns, slow charging, overheating, or battery health degradation."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "My iPhone battery is draining from 100% to 20% in just 2 hours after the latest update."
+      - "Phone gets extremely hot while charging and suddenly turns off at 30%."
+      - "Why is my battery percentage jumping around and dying so fast?"
+    resolution_patterns:
+      - "Guide customer to Settings > Battery to identify high-drain apps."
+      - "Recommend checking Settings > Battery > Battery Health (Beta) for maximum capacity and peak performance capability."
+      - "Suggest disabling Background App Refresh and Location Services for non-essential apps."
+    escalation_conditions:
+      - "Battery is physically swollen, leaking, or device is sparking."
+      - "Customer demands a free out-of-warranty battery replacement."
+
+  - name: "software_update_os"
+    display_name: "iOS & Software Update Issues"
+    description: "Problems downloading, installing, verifying, or recovering from iOS / macOS updates."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "iOS 11 update is stuck on 'Verifying update' for the past 3 hours."
+      - "Getting an error 'Unable to Check for Update' when trying to update my iPad."
+      - "My phone won't install the latest software update even though I have 10GB free space."
+    resolution_patterns:
+      - "Guide customer to delete the downloaded update from Settings > General > iPhone Storage and re-download."
+      - "Suggest restarting the device and ensuring a stable Wi-Fi connection with at least 50% battery charge."
+      - "Recommend updating via iTunes on Mac/PC if over-the-air update fails."
+    escalation_conditions:
+      - "Device is bricked or stuck in a permanent boot loop after update."
+
+  - name: "apple_id_account_access"
+    display_name: "Apple ID & Security Access"
+    description: "Locked Apple ID accounts, forgotten passwords, 2FA verification code issues, or suspicious account access."
+    risk_level: "high"
+    default_action: "ESCALATE_TO_HUMAN"
+    examples:
+      - "My Apple ID has been locked for security reasons and I can't receive the two-factor SMS."
+      - "I forgot my Apple ID password and the trusted phone number is no longer active."
+      - "Someone logged into my iCloud from another country and changed my password."
+    resolution_patterns:
+      - "Direct customer to official recovery portal: iforgot.apple.com to initiate secure account recovery."
+      - "Advise customer that Apple Support cannot manually bypass account security or reset passwords over social media."
+    escalation_conditions:
+      - "Always escalate: Security-sensitive account lockout, suspected account takeover, or identity verification required."
+
+  - name: "app_store_billing_subscription"
+    display_name: "App Store & Billing Disputes"
+    description: "Unauthorized charges, double billing, subscription cancellations, or in-app purchase refund requests."
+    risk_level: "high"
+    default_action: "ESCALATE_TO_HUMAN"
+    examples:
+      - "I was charged $9.99 for an app subscription that I cancelled last week."
+      - "My credit card was charged twice for the same App Store in-app purchase."
+      - "How do I get a refund for an accidental purchase made by my kid?"
+    resolution_patterns:
+      - "Direct customer to reportaproblem.apple.com to view purchase history and request refund."
+      - "Explain how to manage active subscriptions in Settings > [Name] > Subscriptions."
+    escalation_conditions:
+      - "Always escalate: Unauthorized financial transactions, fraud disputes, or direct refund requests requiring account billing lookups."
+
+  - name: "hardware_screen_physical_damage"
+    display_name: "Hardware & Screen Physical Damage"
+    description: "Cracked screens, water damage, broken camera lenses, faulty buttons, or physical housing defects."
+    risk_level: "high"
+    default_action: "ESCALATE_TO_HUMAN"
+    examples:
+      - "I dropped my iPhone X and the front glass is completely shattered."
+      - "My home button is cracked and doesn't click anymore."
+      - "My phone fell into water and now the screen has colored vertical lines."
+    resolution_patterns:
+      - "Advise checking warranty / AppleCare+ coverage at checkcoverage.apple.com."
+      - "Direct customer to schedule a repair appointment at an Apple Store Genius Bar or Apple Authorized Service Provider (AASP) via getsupport.apple.com."
+    escalation_conditions:
+      - "Always escalate: Physical hardware repair required; cannot fix hardware damage via software troubleshooting."
+
+  - name: "connectivity_wifi_bluetooth_network"
+    display_name: "Wi-Fi, Bluetooth & Cellular Connectivity"
+    description: "Inability to connect to Wi-Fi networks, Bluetooth pairing failures (AirPods/CarPlay), or 'No Service' cellular errors."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "My iPhone keeps dropping Wi-Fi connection every 5 minutes."
+      - "Bluetooth won't discover my AirPods or connect to my car."
+      - "Status bar shows 'No Service' even though my carrier SIM card is inserted."
+    resolution_patterns:
+      - "Suggest toggling Airplane Mode on for 30 seconds, then off."
+      - "Guide to Settings > General > Reset > Reset Network Settings (note: resets saved Wi-Fi passwords)."
+      - "Recommend removing and reinserting the SIM card or checking carrier settings update."
+    escalation_conditions:
+      - "Hardware antenna failure or SIM reader hardware fault."
+
+  - name: "audio_sound_microphone"
+    display_name: "Audio, Speakers & Microphone"
+    description: "Low volume, distorted sound, crackling speakers, or callers cannot hear through the microphone."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "Earpiece speaker is extremely quiet during phone calls, can barely hear anyone."
+      - "Microphone is not picking up my voice on Voice Memos or Siri."
+      - "Bottom speaker crackles whenever I play music or YouTube videos."
+    resolution_patterns:
+      - "Advise removing screen protectors or cases that might block speaker/mic openings."
+      - "Suggest gently cleaning speaker grilles with a soft, clean, dry toothbrush."
+      - "Test microphone with Voice Memos app to isolate app-specific vs system-wide issue."
+    escalation_conditions:
+      - "Blown hardware speaker or liquid inside microphone port."
+
+  - name: "storage_icloud_backup"
+    display_name: "iCloud, Storage & Backup"
+    description: "iCloud backup failing, 'iPhone Storage Full' alerts, photo syncing issues, or restoring from backup."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "My iCloud backup says 'Not Enough Storage' even though I only have a few apps."
+      - "Photos are not syncing from my iPhone to my iPad via iCloud Photo Library."
+      - "How do I free up system storage on my 16GB iPhone?"
+    resolution_patterns:
+      - "Guide to Settings > [Name] > iCloud > Manage Storage to inspect backup sizes."
+      - "Recommend enabling 'Optimize iPhone Storage' in Settings > Photos."
+      - "Suggest deleting unused apps or offloading apps via Settings > General > iPhone Storage."
+    escalation_conditions:
+      - "Data loss / corrupted backup requiring specialized account restoration."
+
+  - name: "device_freeze_unresponsive_boot"
+    display_name: "Freezing, Unresponsive Touch & Boot Issues"
+    description: "Device frozen on Apple logo, black screen, touchscreen not responding to touch, or apps freezing."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "My iPhone 8 is completely frozen on the lock screen and won't respond to touch."
+      - "Screen went black and the phone won't turn on even when plugged into charger."
+      - "Phone is stuck on the Apple logo and keeps rebooting."
+    resolution_patterns:
+      - "Provide model-specific Force Restart instructions: Press Volume Up, press Volume Down, hold Side Button until Apple logo appears."
+      - "Advise charging with an official Apple charger for at least 30 minutes before restarting."
+      - "Connect to iTunes on a computer and perform an update in Recovery Mode."
+    escalation_conditions:
+      - "Device fails to enter recovery mode or exhibits repeated logic board failure."
+
+  - name: "general_inquiry_advice"
+    display_name: "General Inquiries & Feature Guidance"
+    description: "Questions regarding product specifications, release dates, trade-in programs, or feature usage."
+    risk_level: "low"
+    default_action: "AUTO_HANDLE"
+    examples:
+      - "How does the Apple Trade-In program work for older iPhones?"
+      - "Does the iPhone 8 support fast charging with a USB-C power adapter?"
+      - "Where can I check if my device is eligible for the battery replacement program?"
+    resolution_patterns:
+      - "Provide official Apple Support knowledge base links (support.apple.com)."
+      - "Explain official feature specifications and trade-in evaluation steps."
+    escalation_conditions:
+      - "Customer requests non-public internal release dates or proprietary corporate info."

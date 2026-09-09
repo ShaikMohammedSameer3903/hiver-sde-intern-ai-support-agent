@@ -1,0 +1,495 @@
+{
+  "dataset_metadata": {
+    "dataset_name": "Customer Support on Twitter",
+    "source_path": "C:\\Users\\shaik\\.cache\\kagglehub\\datasets\\thoughtvector\\customer-support-on-twitter\\versions\\10\\twcs\\twcs.csv",
+    "total_rows": 2811774,
+    "columns": [
+      "tweet_id",
+      "author_id",
+      "inbound",
+      "created_at",
+      "text",
+      "response_tweet_id",
+      "in_response_to_tweet_id"
+    ],
+    "null_counts": {
+      "tweet_id": 0,
+      "author_id": 0,
+      "inbound": 0,
+      "created_at": 0,
+      "text": 0,
+      "response_tweet_id": 1040629,
+      "in_response_to_tweet_id": 794335
+    },
+    "inbound_count": 1537843,
+    "outbound_count": 1273931,
+    "inbound_ratio": 0.5469,
+    "unique_brands_count": 108,
+    "date_range": {
+      "start": "2017-10-11 08:45:00 +0000",
+      "end": "2017-12-03 00:08:58 +0000"
+    },
+    "text_statistics": {
+      "char_length_mean": 115.12,
+      "char_length_median": 116.0,
+      "char_length_min": 2,
+      "char_length_max": 476,
+      "word_count_mean": 19.68,
+      "word_count_median": 19.0
+    }
+  },
+  "top_brand_rankings": [
+    {
+      "brand": "AmazonHelp",
+      "total_messages": 305000,
+      "outbound_brand_replies": 169840,
+      "inbound_customer_msgs": 135160,
+      "estimated_conversations": 76428,
+      "resolution_rich_replies": 94150,
+      "customer_vocabulary_diversity": 10004,
+      "suitability_score": 100.0,
+      "sample_customer_issues": [
+        "@AmazonHelp \u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\n\u4eca\u3001\u96fb\u8a71\u3067\u4e3b\u4eba\u304c\u5bfe\u5fdc\u3057\u3066\u3044\u305f\u3060\u3044\u3066\u307e\u3059\u3002",
+        "@AmazonHelp \u96fb\u8a71\u3067\u5bfe\u5fdc\u3057\u3066\u3082\u3089\u3044\u307e\u3057\u305f\u304c\u6539\u826f\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f\u3002\n\u4fdd\u8a3c\u671f\u9593\u3082\u904e\u304e\u3066\u308b\u306e\u3067\u8cb7\u3044\u76f4\u3057\u306b\u306a\u308b\u3093\u3067\u3057\u3087\u3046\u306d\u3002",
+        "@AmazonHelp \u3053\u3061\u3089\u3053\u305d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f\u3002"
+      ]
+    },
+    {
+      "brand": "AppleSupport",
+      "total_messages": 204756,
+      "outbound_brand_replies": 106860,
+      "inbound_customer_msgs": 97896,
+      "estimated_conversations": 51517,
+      "resolution_rich_replies": 87947,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 100.0,
+      "sample_customer_issues": [
+        "@AppleSupport The newest update. I\ufe0f made sure to download it yesterday.",
+        "@AppleSupport  https://t.co/NV0yucs0lB",
+        "@AppleSupport why are my I\ufe0f\u2019s changing not showing up correctly on any of my social media platforms? https://t.co/GyRvpyVnkE"
+      ]
+    },
+    {
+      "brand": "Uber_Support",
+      "total_messages": 102894,
+      "outbound_brand_replies": 56270,
+      "inbound_customer_msgs": 46624,
+      "estimated_conversations": 25321,
+      "resolution_rich_replies": 48916,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 100.0,
+      "sample_customer_issues": [
+        "@Uber_Support Already did that was told we requested to dropped off somewhere different which is completely false.",
+        "@Uber_Support I\u2019m not getting your texts. https://t.co/GhefNjQTfg",
+        "@Uber_Support @115879 wouldn't do this to me \ud83d\ude14"
+      ]
+    },
+    {
+      "brand": "Tesco",
+      "total_messages": 72537,
+      "outbound_brand_replies": 38573,
+      "inbound_customer_msgs": 33964,
+      "estimated_conversations": 17357,
+      "resolution_rich_replies": 26251,
+      "customer_vocabulary_diversity": 10005,
+      "suitability_score": 100.0,
+      "sample_customer_issues": [
+        "@Tesco Tall lady 6ft, slim, was on the till about 15:10, think she had blonde hair. She served the guy after knowing he didn\u2019t queue up like others",
+        "@Tesco 3/3 on the wrong which I really don\u2019t appreciate. This needs to be investigate and I was simply queuing to pay and the guy pushed in\ud83d\ude21",
+        "@Tesco are complaints taken seriously? Do you take customer complaints seriously or just pay it lip service???"
+      ]
+    },
+    {
+      "brand": "SpotifyCares",
+      "total_messages": 74618,
+      "outbound_brand_replies": 43265,
+      "inbound_customer_msgs": 31353,
+      "estimated_conversations": 19469,
+      "resolution_rich_replies": 24265,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 99.12,
+      "sample_customer_issues": [
+        "@SpotifyCares doesn\u2019t work and i even tried deleting the app",
+        "@SpotifyCares Premium &amp; when i\ufe0f have it on shuffle it turns off when the song is done and just plays in order and the repeat lights up but doesn\u2019t repeat",
+        "@SpotifyCares iphone 7+ and i have the most recent update for spotify"
+      ]
+    },
+    {
+      "brand": "TMobileHelp",
+      "total_messages": 56281,
+      "outbound_brand_replies": 34317,
+      "inbound_customer_msgs": 21964,
+      "estimated_conversations": 15442,
+      "resolution_rich_replies": 29734,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 98.14,
+      "sample_customer_issues": [
+        "@TMobileHelp trying to redeem a free tuesday code and its not letting me telling me theres an error can i get help with this?",
+        "@TMobileHelp  https://t.co/tznFggbx3Y",
+        "@TMobileHelp @115918 OK maybe my problem too let me try that resizing."
+      ]
+    },
+    {
+      "brand": "comcastcares",
+      "total_messages": 56309,
+      "outbound_brand_replies": 33031,
+      "inbound_customer_msgs": 23278,
+      "estimated_conversations": 14863,
+      "resolution_rich_replies": 27738,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 97.97,
+      "sample_customer_issues": [
+        "@comcastcares \u2714",
+        ".@comcastcares tired of getting charged for equipment that was returned months ago. Please stop it.",
+        "@comcastcares Sent and thank you"
+      ]
+    },
+    {
+      "brand": "Delta",
+      "total_messages": 87089,
+      "outbound_brand_replies": 42253,
+      "inbound_customer_msgs": 44836,
+      "estimated_conversations": 25871,
+      "resolution_rich_replies": 20447,
+      "customer_vocabulary_diversity": 10005,
+      "suitability_score": 94.54,
+      "sample_customer_issues": [
+        "@Delta DM sent",
+        "@DELTA i booked my flight using delta amex card. Checking in now &amp; was being charged for baggage",
+        "@Delta I checked daily and flight 1403 was never offered as an option as I most certainly would have made the adjust on my trip."
+      ]
+    },
+    {
+      "brand": "AmericanAir",
+      "total_messages": 86280,
+      "outbound_brand_replies": 36764,
+      "inbound_customer_msgs": 49516,
+      "estimated_conversations": 25949,
+      "resolution_rich_replies": 18810,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 92.57,
+      "sample_customer_issues": [
+        "@AmericanAir Erica on the lax team is amazing give her a raise ty",
+        "@AmericanAir Could you have someone on your lax team available to guide me to my gate ASAP",
+        "@AmericanAir have a flight at 330pm (45mins) I\u2019m almost to Lax. I\u2019m legally blind and didn\u2019t know where to let you know I need assistance."
+      ]
+    },
+    {
+      "brand": "British_Airways",
+      "total_messages": 60217,
+      "outbound_brand_replies": 29361,
+      "inbound_customer_msgs": 30856,
+      "estimated_conversations": 16222,
+      "resolution_rich_replies": 17817,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 91.38,
+      "sample_customer_issues": [
+        "@British_Airways Sure, how much would an upgrade cost, out of curiosity?",
+        "@British_Airways Or, more importantly, are there earlier flights than the itinerary I was rebooked on? That's my preference.",
+        "@British_Airways This itinerary is preferred--I was unable to view other options in the \"Manage my Booking\" link included in the original cancelation email. https://t.co/kfddWeSW49"
+      ]
+    },
+    {
+      "brand": "SouthwestAir",
+      "total_messages": 64083,
+      "outbound_brand_replies": 28977,
+      "inbound_customer_msgs": 35106,
+      "estimated_conversations": 21289,
+      "resolution_rich_replies": 12446,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 84.94,
+      "sample_customer_issues": [
+        "I really hadthe WORST experience ever from start to finish with @SouthwestAir  will never fly internationally again with them",
+        "Celebrated Halloween on a @southwestair flight with my pumpkin spice @15890 and a delicious (free) @115927 O\u2026 https://t.co/GGPGaaFVq2 https://t.co/gnCxPEsaEv",
+        "Thanks to the wonderful @SouthwestAir crews of flights 1732 &amp; 560 for getting us from Sacramento to KC safe and sound! #YouRock"
+      ]
+    },
+    {
+      "brand": "Ask_Spectrum",
+      "total_messages": 49536,
+      "outbound_brand_replies": 25860,
+      "inbound_customer_msgs": 23676,
+      "estimated_conversations": 11637,
+      "resolution_rich_replies": 19010,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 83.1,
+      "sample_customer_issues": [
+        "@Ask_Spectrum Would you like me to email you a copy of one since Spectrum is not updating your training?",
+        "@Ask_Spectrum I received this from your corporate office would you like a copy?",
+        "@Ask_Spectrum The correct way to do it is via an OCS Account Takeover and email Consent Form it does not need to be done in a local office"
+      ]
+    },
+    {
+      "brand": "VirginTrains",
+      "total_messages": 65213,
+      "outbound_brand_replies": 27817,
+      "inbound_customer_msgs": 37396,
+      "estimated_conversations": 14219,
+      "resolution_rich_replies": 11467,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 82.72,
+      "sample_customer_issues": [
+        "@VirginTrains so i wait almost 3 hours and then they are rude and arrogant &amp; unhelpful after which she is raising a technical case https://t.co/yi9oxFMatO",
+        "@VirginTrains thanks!",
+        "@VirginTrains hi! i need some help with a booking i need to change, and made a mistake on. who can i contact?"
+      ]
+    },
+    {
+      "brand": "XboxSupport",
+      "total_messages": 52681,
+      "outbound_brand_replies": 24557,
+      "inbound_customer_msgs": 28124,
+      "estimated_conversations": 11773,
+      "resolution_rich_replies": 10971,
+      "customer_vocabulary_diversity": 10014,
+      "suitability_score": 75.2,
+      "sample_customer_issues": [
+        "@MicrosoftHelps @XboxSupport Brilliant, thank you!",
+        "@XboxSupport can I change me sons Xbox live account to his Hotmail account, currently linked to my Hotmail account",
+        "@XboxSupport They have no info either.."
+      ]
+    },
+    {
+      "brand": "sainsburys",
+      "total_messages": 42328,
+      "outbound_brand_replies": 19466,
+      "inbound_customer_msgs": 22862,
+      "estimated_conversations": 10581,
+      "resolution_rich_replies": 13262,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 71.19,
+      "sample_customer_issues": [
+        "@sainsburys what are you doing to reduce the use of single use plastic in the product lines you carry? #reducewaste",
+        "@sainsburys I did thankfully! And this evening about 9.30pm. I talked to the checkout girl about the kettle I was buying too.",
+        "@sainsburys Ok will do, thank you!"
+      ]
+    },
+    {
+      "brand": "GWRHelp",
+      "total_messages": 46385,
+      "outbound_brand_replies": 19364,
+      "inbound_customer_msgs": 27021,
+      "estimated_conversations": 10424,
+      "resolution_rich_replies": 11429,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 70.81,
+      "sample_customer_issues": [
+        "@GWRHelp Do u expect people to travel with a compass???",
+        "@GWRHelp boarding the 22:45 from pad to swindon. Where in reading do I have to go for the bus?dont usually find staff to help!!!",
+        "@GWRHelp Thankyou, I just mentioned it as I've got a ticket for that one &amp; was a bit worried it had disappeared off the timetable that's all.Cheers!"
+      ]
+    },
+    {
+      "brand": "sprintcare",
+      "total_messages": 36127,
+      "outbound_brand_replies": 22381,
+      "inbound_customer_msgs": 13746,
+      "estimated_conversations": 10071,
+      "resolution_rich_replies": 14886,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 69.35,
+      "sample_customer_issues": [
+        "@sprintcare and how do you propose we do that",
+        "@sprintcare I have sent several private messages and no one is responding as usual",
+        "@sprintcare I did."
+      ]
+    },
+    {
+      "brand": "AskPlayStation",
+      "total_messages": 41361,
+      "outbound_brand_replies": 19098,
+      "inbound_customer_msgs": 22263,
+      "estimated_conversations": 10847,
+      "resolution_rich_replies": 11456,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 68.89,
+      "sample_customer_issues": [
+        "@AskPlayStation @115743 Can I get help already??",
+        "@AskPlayStation So, what's the november ps plus free game?",
+        "@AskPlayStation It was when I would go to download it. I just waited a few hours till after I bought it and it downloaded now."
+      ]
+    },
+    {
+      "brand": "hulu_support",
+      "total_messages": 40487,
+      "outbound_brand_replies": 21872,
+      "inbound_customer_msgs": 18615,
+      "estimated_conversations": 9842,
+      "resolution_rich_replies": 11607,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 67.29,
+      "sample_customer_issues": [
+        "@hulu_support Getting to the lists of episodes.  It\u2019s not difficult.  Just way more annoying.  Plus you can\u2019t see as many choices on screen at once.",
+        "@hulu_support Thanks",
+        "@hulu_support   @115940 my wife and I hate the new  interface.    Enjoy the content but getting their is a horrible experience"
+      ]
+    },
+    {
+      "brand": "UPSHelp",
+      "total_messages": 32470,
+      "outbound_brand_replies": 17817,
+      "inbound_customer_msgs": 14653,
+      "estimated_conversations": 8017,
+      "resolution_rich_replies": 15999,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 66.12,
+      "sample_customer_issues": [
+        "@UPSHelp Nope, I\u2019ve got my package thanks",
+        "@UPSHelp  https://t.co/FOBx5USiy1",
+        "@115817 @UPSHELP You have an epic fail regarding a delivery. It\u2019s unacceptable and poor service. No delivery attempt by driver, lying by the driver, then misinformed by phone agent and still no delivery and it will be 3days late."
+      ]
+    },
+    {
+      "brand": "ChipotleTweets",
+      "total_messages": 40564,
+      "outbound_brand_replies": 18749,
+      "inbound_customer_msgs": 21815,
+      "estimated_conversations": 13213,
+      "resolution_rich_replies": 4914,
+      "customer_vocabulary_diversity": 10001,
+      "suitability_score": 63.8,
+      "sample_customer_issues": [
+        "@ChipotleTweets @ChipotleTweets Becky is very nice",
+        "@ChipotleTweets @28 \nI don't fit in my Veggie Burrito costume #Halloween https://t.co/7tJDVpzLWn",
+        "@ChipotleTweets messed up today and didn\u2019t give me my $3 burrito although I was dressed up \ud83d\ude2d"
+      ]
+    },
+    {
+      "brand": "ATVIAssist",
+      "total_messages": 42391,
+      "outbound_brand_replies": 17650,
+      "inbound_customer_msgs": 24741,
+      "estimated_conversations": 7942,
+      "resolution_rich_replies": 9094,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 62.7,
+      "sample_customer_issues": [
+        "@ATVIAssist @115754 umm someone is streaming WWII with 500+ viewers https://t.co/AhBT7AZZSz",
+        "@ATVIAssist @115755 I'm trying to buy the digital deluxe edition on the ps store but I keep receiving an error message",
+        "@ATVIAssist Thanks"
+      ]
+    },
+    {
+      "brand": "O2",
+      "total_messages": 35647,
+      "outbound_brand_replies": 16212,
+      "inbound_customer_msgs": 19435,
+      "estimated_conversations": 8953,
+      "resolution_rich_replies": 9718,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 61.42,
+      "sample_customer_issues": [
+        "@O2 I have got through &amp; Nikita explained to me that the bills will update in the next 3 days\nI will keep an eye on it &amp; let you know!",
+        "@O2 I placed an order on Friday for \u00a320 for 20GB with 3 months free Sim Only thru Live Chat.\nWhen I look at my account.. It shows \u00a333 per month?\nAnd I can\u2019t talk to anybody on Live Chat now.. Is it down?",
+        "@O2 any idea when Android O will be released for the Sony xz?"
+      ]
+    },
+    {
+      "brand": "VerizonSupport",
+      "total_messages": 35895,
+      "outbound_brand_replies": 17966,
+      "inbound_customer_msgs": 17929,
+      "estimated_conversations": 8084,
+      "resolution_rich_replies": 7413,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 57.62,
+      "sample_customer_issues": [
+        "@VerizonSupport I finally got someone that helped me, thanks!",
+        "somebody from @VerizonSupport please help meeeeee \ud83d\ude29\ud83d\ude29\ud83d\ude29\ud83d\ude29 I'm having the worst luck with your customer service",
+        "@VerizonSupport My friend is without internet we need to play videogames together please our skills diminish every moment without internetz"
+      ]
+    },
+    {
+      "brand": "idea_cares",
+      "total_messages": 31658,
+      "outbound_brand_replies": 15724,
+      "inbound_customer_msgs": 15934,
+      "estimated_conversations": 7075,
+      "resolution_rich_replies": 8895,
+      "customer_vocabulary_diversity": 10002,
+      "suitability_score": 55.94,
+      "sample_customer_issues": [
+        "@116327, @idea_cares @116328 @116329 ,yet in 2017 we are facing very poor network in my village and surrounding locality.",
+        "@idea_cares I already replied via DIRECT MESSAGE",
+        "@116331 @idea_cares Me &amp; my father have a security issue to report &amp; incompetancy of your Representative from connought place, delhi. That has costed us more than rs.1000. And till date we're suffering from the way idea has handled my dad's case. Need urgent help."
+      ]
+    },
+    {
+      "brand": "Safaricom_Care",
+      "total_messages": 33351,
+      "outbound_brand_replies": 16077,
+      "inbound_customer_msgs": 17274,
+      "estimated_conversations": 8520,
+      "resolution_rich_replies": 6023,
+      "customer_vocabulary_diversity": 10002,
+      "suitability_score": 55.26,
+      "sample_customer_issues": [
+        "@Safaricom_Care I bought airtime for the line. Has it been consumed?",
+        "@Safaricom_Care the recipient is a postpay CVP line",
+        "@Safaricom_Care Sorry there was poor internet connection , you can now if possible"
+      ]
+    },
+    {
+      "brand": "AirAsiaSupport",
+      "total_messages": 25848,
+      "outbound_brand_replies": 12829,
+      "inbound_customer_msgs": 13019,
+      "estimated_conversations": 5979,
+      "resolution_rich_replies": 6876,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 49.15,
+      "sample_customer_issues": [
+        "@AirAsiaSupport Hi! I have DM u my booking # and passport picture thanks so much for quick action",
+        "@AirAsiaSupport thank you very much..",
+        "@AirAsiaSupport Hi! i would like to know on my itenerary on how the birthday can be seen. i would like to double check if i can key in our birthdays right \ud83d\ude42"
+      ]
+    },
+    {
+      "brand": "AskTarget",
+      "total_messages": 20461,
+      "outbound_brand_replies": 13218,
+      "inbound_customer_msgs": 7243,
+      "estimated_conversations": 5948,
+      "resolution_rich_replies": 8647,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 48.54,
+      "sample_customer_issues": [
+        "@AskTarget Thank you for responding. I look forward to working with you.",
+        "@AskTarget Looks like Marketing Team didn't think that was a good idea. What is the motto for @116062 again? Something like \"lol Fuck Our Customers\"?",
+        "@116065 @AskTarget @116062 Can you do something similar for the Crota Funko Pop? This proves that you're capable of letting us know in advance when a limited product will go up for sale. You can still redeem yourselves for that fiasco of a launch. Please don't just randomly throw it up."
+      ]
+    },
+    {
+      "brand": "SW_Help",
+      "total_messages": 27982,
+      "outbound_brand_replies": 12231,
+      "inbound_customer_msgs": 15751,
+      "estimated_conversations": 5503,
+      "resolution_rich_replies": 5526,
+      "customer_vocabulary_diversity": 10003,
+      "suitability_score": 47.96,
+      "sample_customer_issues": [
+        "@SW_Help Sorry mean 22:11:41",
+        "@SW_Help That is not what happened.  Or are the platform clocks slow.  Look at the CCTV",
+        "@SW_Help I was at the door with fifty seconds to spare and it left at 11.41."
+      ]
+    },
+    {
+      "brand": "BofA_Help",
+      "total_messages": 18733,
+      "outbound_brand_replies": 12683,
+      "inbound_customer_msgs": 6050,
+      "estimated_conversations": 5707,
+      "resolution_rich_replies": 8393,
+      "customer_vocabulary_diversity": 10000,
+      "suitability_score": 47.05,
+      "sample_customer_issues": [
+        "@BofA_Help Thanks",
+        "@BofA_Help Anytime after 12noon today or anytime tomorrow",
+        "@BofA_Help Whenever your ready"
+      ]
+    }
+  ],
+  "profiling_timestamp": "2026-09-09T15:14:43.141822",
+  "profiling_duration_seconds": 33.67
+}
